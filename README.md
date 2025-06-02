@@ -1,6 +1,6 @@
-# Reconhecimento Automatizado de Placas de Caminhões com Python
+# Sistema de Estacionamento e Reconhecimento Automatizado de Placas de Veículos com Python
 
-Este projeto realiza o reconhecimento automatizado de placas de veículos utilizando Python, OpenCV e Tesseract OCR. As placas detectadas são salvas em um banco de dados MongoDB para consulta posterior.
+Este projeto realiza o reconhecimento automatizado de placas de veículos utilizando Python, OpenCV e Tesseract OCR. As placas detectadas são salvas em um banco de dados PostgreSQL para uso de um sistema de gerenciamento de veículos e usuários, de forma semelhante a um estacionamento.
 
 ---
 
@@ -9,7 +9,7 @@ Antes de começar, certifique-se de que o sistema atende aos seguintes requisito
 - **Sistema Operacional:** Windows 10 ou superior
 - **Python:** Versão 3.8 ou superior
 - **Tesseract OCR:** Instalado no sistema
-- **MongoDB Atlas:** Conta configurada e cluster ativo
+- **PostgreSQL:** Conta configurada e banco de dados criado
 
 ---
 
@@ -18,8 +18,8 @@ Antes de começar, certifique-se de que o sistema atende aos seguintes requisito
 ### **1. Clone o Repositório**
 Baixe o código do projeto para o seu computador:
 ```bash
-git clone https://github.com/seu-repositorio/reconhecimento-placas.git
-cd reconhecimento-placas
+git clone https://github.com/seu-repositorio/parking-system.git
+cd parking-system
 
 2. Instale o Python
 Baixe o Python no site oficial: https://www.python.org/downloads/
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 Se o arquivo requirements.txt não existir, instale manualmente as dependências:
 
-pip install flask opencv-python pytesseract pymongo numpy
+pip install flask opencv-python pytesseract psycopg2-binary numpy
 
 Bibliotecas utilizadas:
 
@@ -56,8 +56,9 @@ Numpy: Para manipulação de arrays e operações matemáticas.
 OpenCV (cv2): Para processamento de imagens e detecção de contornos.
 Regex: Para validação de padrões de texto (placas).
 Flask: Para criar o servidor web.
-PyMongo: Para conectar e interagir com o MongoDB.
+Psycopg2-binary: Para conectar e interagir com o PostgreSQL.
 Pytesseract: Para reconhecimento óptico de caracteres (OCR).
+
 5. Instale o Tesseract OCR
 Baixe o Tesseract OCR: https://github.com/UB-Mannheim/tesseract/wiki
 
@@ -70,24 +71,34 @@ tesseract --version
 Atualize o caminho do Tesseract no arquivo CV3T.py:
 pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
-6. Configure o MongoDB Atlas
-Crie uma conta no MongoDB Atlas.
-Configure um cluster gratuito.
-Obtenha a URL de conexão do cluster (exemplo: mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority).
-Atualize o arquivo app.py com a URL de conexão:
+6. - Instale o PostgreSQL: https://www.postgresql.org/download/
+- Crie um banco de dados e um usuário para o projeto.
+- Anote o nome do banco, usuário, senha, host e porta.
 
-client = MongoClient('mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority')
+Atualize o arquivo `app.py` com as informações de conexão:
+"
+import psycopg2
 
-Execute o Projeto
+conn = psycopg2.connect(
+    dbname='nome_do_banco',
+    user='seu_usuario',
+    password='sua_senha',
+    host='localhost',
+    port='5432'
+)
+"
+
+7. Execute o Projeto
 Inicie o servidor Flask:
-
+"bash
 python app.py
+"
 
 Abra o navegador e acesse:
 
 http://127.0.0.1:5000
 
-. Teste o Reconhecimento de Placas
+8. Teste o Reconhecimento de Placas
 Aponte a câmera para uma placa de veículo.
 O sistema exibirá o feed de vídeo e detectará as placas.
 As placas detectadas serão salvas no MongoDB.
@@ -111,9 +122,10 @@ Verifique se o caminho do Tesseract está correto no arquivo CV3T.py:
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
-2. O MongoDB não está conectado
-Certifique-se de que a URL de conexão no app.py está correta.
-Verifique se o cluster do MongoDB Atlas está ativo.
+2. O PostgreSQL não está conectado  
+- Certifique-se de que as informações de conexão no `app.py` estão corretas.
+- Verifique se o serviço do PostgreSQL está ativo.
+
 3. O feed de vídeo está travando
 Reduza a resolução do vídeo no app.py
 
@@ -121,7 +133,9 @@ camera.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
 
 Contribuidores
-Diego Justino da Silva (Justas): Trabalho principal no desenvolvimento e integração.
+Diego Justino da Silva (Justas): Desenvolvimento do sistema de reconhecimento de placas.
+Breno de Pádua Soares: Desenvolvimento do sistema de gerenciamento de usuários (backend) e integração com o sistema de reconhecimento de placas.
+Lucas de Moraes Silveira: Desenvolvimento do sistema de gerenciamento de usuários (frontend).
 
 Licença
 Este projeto é de uso acadêmico e não deve ser utilizado para fins comerciais sem autorização.

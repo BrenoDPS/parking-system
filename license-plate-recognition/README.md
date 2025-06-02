@@ -9,6 +9,7 @@ license-plate-recognition
 ├── backend
 │   ├── app.py               # Ponto de entrada da aplicação backend
 │   ├── CV3T.py              # Lógica de reconhecimento de placas
+│   ├── database.py           # Pool de conexões para o banco de dados   
 │   └── requirements.txt      # Dependências do backend
 ├── frontend
 │   ├── index.html           # Página principal do frontend
