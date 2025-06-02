@@ -1,0 +1,141 @@
+.gray-border {
+  border: thin solid #ffffff1f !important; /* #ffffff05 */
+}
+.orange-border {
+  border: thin solid #ff980075 !important; /* #ffffff05 */
+}
+.gray-border-bottom {
+  border-bottom: thin solid #ffffff1f !important; /* #ffffff05 */
+}
+
+.v-text-field.input-cell input {
+  /* color: #FF9800 !important; */
+  /* font-weight: 400; */
+  text-align: center !important;
+  /* cursor: pointer; */
+}
+.v-text-field.input-cell input:focus {
+  background-color: #383737 !important;
+}
+/* .input-cell .v-input__slot {
+  padding: 0 4px !important;
+} */
+.input-cell:hover {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 24px;
+}
+.input-cell-hover {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 24px;
+}
+.input-cell:focus {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 24px;
+}
+.input-cell-rounded-md:hover {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 8px;
+}
+.input-cell-rounded-md-hover {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 8px;
+}
+.input-cell-rounded-md:focus {
+  /* font-weight: 900 !important; */
+  background-color: #383737 !important;
+  border-radius: 8px;
+}
+.mobile-input-cell input {
+  border-radius: 50px;
+}
+.mobile-input-cell .v-input__slot {
+  padding: 0px !important;
+}
+
+.flex-gap-col-2 {
+  gap: 0px 8px;
+}
+
+.flex-gap-col-4 {
+  gap: 0px 16px;
+}
+
+.flex-gap-col-8 {
+  gap: 0px 32px;
+}
+
+.flex-gap-row-4 {
+  gap: 16px 0px;
+}
+
+.flex-gap-row-8 {
+  gap: 32px 0px;
+}
+
+.flex-gap-8 {
+  gap: 32px;
+}
+
+.flex-gap-4 {
+  gap: 16px;
+}
+
+.input-cell.input-cell-orange input {
+  color: #ff9800 !important;
+}
+
+.mobile-input-cell input {
+  color: #ff9800 !important;
+}
+
+.v-chip.v-chip--outlined.v-chip.v-chip.alive-transp-background {
+  background-color: #19f7881c !important;
+}
+
+.v-chip.v-chip--outlined.v-chip.v-chip.secondary-transp-background {
+  background-color: #19f7881c !important;
+}
+/* 
+.v-chip.v-chip--outlined.v-chip.v-chip.attention-transp-background {
+  background-color: #463635 !important;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar:hover {
+  height: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #BDBDBD !important; 
+  border-radius: 50px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161;
+}
+.timestamp-column {
+  min-width: 40px !important;
+  max-width: 40px !important;
+}
+.timestamp-column-nospot {
+  min-width: 40px !important;
+  max-width: 40px !important;
+}
+.timestamp-column-small {
+  min-width: 40px !important;
+  max-width: 40px !important;
+}

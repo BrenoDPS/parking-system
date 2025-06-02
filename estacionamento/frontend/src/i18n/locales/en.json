@@ -1,0 +1,134 @@
+{
+  "menus": {
+    "home": "Home"
+  },
+  "title": {
+    "fxEngine": "Parking System"
+  },
+  "instructions": {
+    "close": "Close",
+    "logout": "Logout",
+    "login": "Login",
+    "cancel": "Cancel",
+    "save": "Save",
+    "next": "Next",
+    "back": "Back"
+  },
+  "extras": {
+    "at": "at",
+    "readOnly": "Read only",
+    "footer": "© 2023-2024 ParkIntel AI. All rights reserved.",
+    "language": "language"
+  },
+  "fxEngine": {
+    "spotD2": "Spot D2",
+    "lastUpdate": "Last update:",
+    "WDOJ24": "WDOJ24",
+    "casadoUsd": "Married USD",
+    "USDBRL": "USDBRL",
+    "ask": "Sell",
+    "bid": "Buy",
+    "operationalSummary": "Operational summary",
+    "lastSevenDays": "Last 7 days",
+    "deals": "Deals",
+    "dealDestination": "Deal destination address",
+    "spreads": {
+      "title": "Spreads",
+      "categories": {
+        "title": "Categories",
+        "foreignTrade": "FOREIGN_TRADE",
+        "foreignCapital": "FOREIGN_CAPITAL",
+        "capitalGains": "CAPITAL_GAINS",
+        "insurance": "INSURANCE",
+        "micellaneousServices": "MISCELLANEOUS_SERVICES",
+        "transport": "TRANSPORT"
+      },
+      "notional": "Notional",
+      "status": {
+        "title": "Status",
+        "active": "Active",
+        "skip": "Skip"
+      },
+      "category": "Category",
+      "valueBps": "Value (bps)",
+      "lastUpdate": "Last update",
+      "edit": {
+        "title": "Edit",
+        "spread": "Spread",
+        "status": "Status",
+        "active": "Active",
+        "notional": "Notional",
+        "updatedSucces": "Updated successfully"
+      }
+    }
+  },
+  "toolbar": {
+    "title": "Control Panel",
+    "mesaCambio": "Parking Management (Demo) | PARK HERE LTD",
+    "timeZone": "Time zone: BRT",
+    "errorMessage": "Unable to log out. Please try again later."
+  },
+  "requestHelp": {
+    "requestHelp": "Request help",
+    "greeting": "Hello, how can we help?",
+    "instruction": "Select how you would like to receive help from our Representatives",
+    "sendEmail": {
+      "title": "Send us an email",
+      "btnText": "Send email"
+    },
+    "helpTicket": {
+      "title": "Open a support ticket",
+      "description": "We will respond as soon as possible",
+      "btnText": "Start ticket (TBR)"
+    },
+    "liveChat": {
+      "title": "Live chat",
+      "btnText": "Start chat (TBR)"
+    }
+  },
+  "landing": {
+    "title": "Intelligent Parking Control",
+    "description": {
+      "descriptionOne": "Access our platform to revolutionize your parking management.",
+      "descriptionTwo": "Use the power of license plate recognition to automate access, payments, and security."
+    },
+    "pricerConsole": {
+      "title": "ParkIntel AI | Advanced Monitoring",
+      "descriptionOne": "Monitor vehicle entries and exits in real time.",
+      "descriptionTwo": "Monitor parking occupancy, view plate history, and",
+      "descriptionThree": "optimize your parking flow with accurate data."
+    },
+    "deliverQuotes": {
+      "title": "Automated and Secure Access",
+      "descriptionOne": "Our Automatic License Plate Recognition (LPR) system",
+      "descriptionTwo": "ensures quick and secure access for authorized vehicles.",
+      "descriptionThree": "Reduce queues, increase security, and improve the experience",
+      "descriptionFour": "for your customers and users."
+    },
+    "streamlineOperations": {
+      "title": "Efficient and Optimized Management",
+      "descriptionOne": "Enable your team to manage the parking more effectively.",
+      "descriptionTwo": "Integrate with payment systems, generate detailed reports",
+      "descriptionThree": "and make data-driven decisions to increase revenue and",
+      "descriptionFour": "reduce operational costs."
+    }
+  },
+  "login": {
+    "title": "System Access",
+    "description": {
+      "descriptionOne": "This is a secure ParkIntel AI authentication service",
+      "descriptionTwo": "that allows access to management features",
+      "descriptionThree": "of your parking from anywhere."
+    },
+    "corporateEmail": "Your Email",
+    "password": "Password",
+    "invalidCredentials": "Authentication failed: invalid credentials"
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "descriptionOne": "Oops! It looks like you tried to access a page that doesn't exist on our platform.",
+    "descriptionTwo": "This can happen if you followed an incorrect link or the page has been moved.",
+    "descriptionThree": "Check the address you entered or return to the home page.",
+    "apologies": "We apologize for the inconvenience."
+  }
+}

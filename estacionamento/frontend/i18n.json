@@ -1,0 +1,16 @@
+{
+  "version": 1.1,
+  "locale": {
+    "source": "en",
+    "targets": [
+      "pt"
+    ]
+  },
+  "buckets": {
+    "json": {
+      "include": [
+        "src/i18n/locales/[locale].json"
+      ]
+    }
+  }
+}

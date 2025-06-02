@@ -1,0 +1,180 @@
+{
+  "menus": {
+    "home": "Início"
+  },
+  "title": {
+    "fxEngine": "Sistema de Estacionamento",
+    "dashboardData": "Painel de Dados"
+  },
+  "instructions": {
+    "close": "Fechar",
+    "logout": "Sair",
+    "login": "Acessar",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "next": "Próximo",
+    "back": "Voltar"
+  },
+  "extras": {
+    "at": "às",
+    "readOnly": "Somente leitura",
+    "footer": "© 2023-2024 ParkIntel IA. Todos os direitos reservados.",
+    "language": "idioma"
+  },
+  "fxEngine": {
+    "spotD2": "Spot D2",
+    "lastUpdate": "Última atualização:",
+    "WDOJ24": "WDOJ24",
+    "casadoUsd": "Casado USD",
+    "USDBRL": "USDBRL",
+    "ask": "Venda",
+    "bid": "Compra",
+    "operationalSummary": "Resumo operacional",
+    "lastSevenDays": "Últimos 7 dias",
+    "deals": "Operações",
+    "dealDestination": "Endereço de destino da operação",
+    "spreads": {
+      "title": "Spreads",
+      "categories": {
+        "title": "Categorias",
+        "foreignTrade": "COMÉRCIO_EXTERIOR",
+        "foreignCapital": "CAPITAL_ESTRANGEIRO",
+        "capitalGains": "GANHOS_DE_CAPITAL",
+        "insurance": "SEGUROS",
+        "micellaneousServices": "SERVIÇOS_DIVERSOS",
+        "transport": "TRANSPORTE"
+      },
+      "notional": "Nocional",
+      "status": {
+        "title": "Status",
+        "active": "Ativo",
+        "skip": "Pular"
+      },
+      "category": "Categoria",
+      "valueBps": "Valor (bps)",
+      "lastUpdate": "Última atualização",
+      "edit": {
+        "title": "Editar",
+        "spread": "Spread",
+        "status": "Status",
+        "active": "Ativo",
+        "notional": "Nocional",
+        "updatedSucces": "Atualizado com sucesso"
+      }
+    }
+  },
+  "toolbar": {
+    "title": "Painel de Controle",
+    "mesaCambio": "Gestão de Estacionamento (Demo) | ESTACIONE AQUI LTDA",
+    "timeZone": "Fuso horário: BRT",
+    "errorMessage": "Não foi possível sair. Tente novamente mais tarde."
+  },
+  "requestHelp": {
+    "requestHelp": "Solicitar ajuda",
+    "greeting": "Olá, como podemos ajudar?",
+    "instruction": "Selecione como você gostaria de receber ajuda dos nossos Representantes",
+    "sendEmail": {
+      "title": "Envie-nos um e-mail",
+      "btnText": "Enviar e-mail"
+    },
+    "helpTicket": {
+      "title": "Abrir um ticket de suporte",
+      "description": "Responderemos o mais breve possível",
+      "btnText": "Iniciar ticket (TBR)"
+    },
+    "liveChat": {
+      "title": "Chat ao vivo",
+      "btnText": "Iniciar chat (TBR)"
+    }
+  },
+  "landing": {
+    "title": "Controle Inteligente de Estacionamento",
+    "description": {
+      "descriptionOne": "Acesse nossa plataforma para revolucionar a gestão do seu estacionamento.",
+      "descriptionTwo": "Utilize o poder do reconhecimento de placas para automatizar o acesso, pagamentos e segurança."
+    },
+    "pricerConsole": {
+      "title": "ParkIntel IA | Monitoramento Avançado",
+      "descriptionOne": "Acompanhe em tempo real as entradas e saídas de veículos.",
+      "descriptionTwo": "Monitore a ocupação das vagas, visualize o histórico de placas e",
+      "descriptionThree": "otimize o fluxo do seu estacionamento com dados precisos."
+    },
+    "deliverQuotes": {
+      "title": "Acesso Automatizado e Seguro",
+      "descriptionOne": "Nosso sistema de Leitura Automática de Placas de Veículos (LPR)",
+      "descriptionTwo": "garante o acesso rápido e seguro para veículos autorizados.",
+      "descriptionThree": "Reduza filas, aumente a segurança e melhore a experiência",
+      "descriptionFour": "dos seus clientes e usuários."
+    },
+    "streamlineOperations": {
+      "title": "Gestão Eficiente e Otimizada",
+      "descriptionOne": "Permita que sua equipe gerencie o estacionamento de forma mais eficaz.",
+      "descriptionTwo": "Integre com sistemas de pagamento, gere relatórios detalhados",
+      "descriptionThree": "e tome decisões baseadas em dados para aumentar a receita e",
+      "descriptionFour": "reduzir custos operacionais."
+    }
+  },
+  "login": {
+    "title": "Acesso ao Sistema",
+    "description": {
+      "descriptionOne": "Este é um serviço seguro de autenticação ParkIntel IA",
+      "descriptionTwo": "que permite acesso às funcionalidades de gestão",
+      "descriptionThree": "do seu estacionamento de onde você estiver."
+    },
+    "corporateEmail": "Seu E-mail",
+    "password": "Senha",
+    "invalidCredentials": "Falha na autenticação: credenciais inválidas"
+  },
+  "notFound": {
+    "title": "404 Página não encontrada",
+    "descriptionOne": "Ops! Parece que você tentou acessar uma página que não existe em nossa plataforma.",
+    "descriptionTwo": "Isso pode acontecer se você seguiu um link incorreto ou a página foi movida.",
+    "descriptionThree": "Verifique o endereço digitado ou retorne à página inicial.",
+    "apologies": "Pedimos desculpas pelo inconveniente."
+  },
+  "pageTitles": {
+    "vehicles": "Veículos Cadastrados",
+    "users": "Usuários do Sistema",
+    "accessRecords": "Registros de Acesso"
+  },
+  "tables": {
+    "noData": "Nenhum dado disponível",
+    "itemsPerPage": "Itens por página:",
+    "loading": "Carregando dados..."
+  },
+  "headers": {
+    "vehicles": {
+      "plate": "Placa",
+      "brand": "Marca",
+      "model": "Modelo",
+      "color": "Cor",
+      "userName": "Nome do Usuário",
+      "userRegistry": "Matrícula do Usuário",
+      "registrationDate": "Data de Cadastro"
+    },
+    "users": {
+      "name": "Nome",
+      "registry": "Matrícula",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "type": "Tipo",
+      "courseDepartment": "Curso/Departamento",
+      "registrationDate": "Data de Cadastro"
+    },
+    "registers": {
+      "vehiclePlate": "Placa do Veículo",
+      "recognizedPlate": "Placa Reconhecida",
+      "userName": "Nome do Usuário",
+      "userRegistry": "Matrícula do Usuário",
+      "dateTime": "Data e Hora",
+      "status": "Status"
+    }
+  },
+  "statusTypes": {
+    "entry": "Entrada",
+    "exit": "Saída"
+  },
+  "notifications": {
+    "fetchDataError": "Erro ao buscar dados. Por favor, tente novamente."
+  }
+}
